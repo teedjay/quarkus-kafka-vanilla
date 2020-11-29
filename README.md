@@ -2,6 +2,12 @@
 
 This project uses [Quarkus](https://quarkus.io/), the Supersonic Subatomic Java Framework.
 
+```
+curl -i :8080/kafka/consume         <== consume messages for max 1000ms and print the result
+curl -i :8080/kafka/produce         <== produce 1 message
+curl -i :8080/kafka/produce/{N}     <== produce N messages
+```
+
 ## Prerequisite
 You need JDK 15 to compile and run this project and you also need to enable preview mode since record are used.
 Right now enabling preview mode for compiling and dev mode works out of the box, not need to do anthing specific.
